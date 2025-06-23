@@ -6,7 +6,7 @@ ChroniCare es una solución digital pensada para mejorar el autocuidado de pacie
 ## Equipo de desarrollo
 
 - Antony David Yauri Barrios U202214499
-- Diego Sebastián Zúñiga Murillo
+- Diego Sebastián Zúñiga Murillo U202310636
 - Juan Carlos Orosco Ttamiña
 - Diego Fernando Herrera Enriquez
 - Flor de María Contreras León
