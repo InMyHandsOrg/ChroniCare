@@ -10,7 +10,7 @@ ChroniCare es una solución digital pensada para mejorar el autocuidado de pacie
 - Juan Carlos Orosco Ttamiña
 - Diego Fernando Herrera Enriquez
 - Flor de María Contreras León u202323243
-- Diego Mateo Collantes Carrillo
+- Diego Mateo Collantes Carrillo u202311823
   
 ### Facultad de Ingeniería – Universidad Peruana de Ciencias Aplicadas (UPC)
 
