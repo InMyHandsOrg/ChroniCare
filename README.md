@@ -8,7 +8,7 @@ ChroniCare es una solución digital pensada para mejorar el autocuidado de pacie
 - Antony David Yauri Barrios U202214499
 - Diego Sebastián Zúñiga Murillo U202310636
 - Juan Carlos Orosco Ttamiña U202414840
-- Diego Fernando Herrera Enriquez
+- Diego Fernando Herrera Enriquez U202319027
 - Flor de María Contreras León u202323243
 - Diego Mateo Collantes Carrillo u202311823
   
