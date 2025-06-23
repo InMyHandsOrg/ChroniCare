@@ -27,3 +27,11 @@ ChroniCare es una solución digital pensada para mejorar el autocuidado de pacie
 - Alertas cuando los valores están fuera de los rangos normales
 - Espacio para recibir retroalimentación de asesores médicos
 - Landing page informativa con enfoque claro, accesible y visualmente amable al usuario no especializado en tecnología
+
+## Tecnologías usadas
+
+- HTML5
+- CSS3
+- JavaScript
+- WebStorm
+- Git / GitHub
