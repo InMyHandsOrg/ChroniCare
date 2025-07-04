@@ -1,0 +1,135 @@
+header {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+}
+
+.menu {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.header-container .logo-link, .header-container img {
+    height: 80px;
+    cursor: pointer;
+}
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.login {
+    background-color: #303030;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 30px;
+}
+.login:hover{
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 1453px) {
+    .header-container {
+
+        width: 90%;
+
+    }
+}
+@media (max-width: 1379px) {
+    .nav-buttons{
+   
+    width: 70%;
+   
+}
+}
+@media (max-width: 1129px) {
+    .nav-buttons{
+   
+    width: 74%;
+   
+}
+}
+
+
+@media (max-width: 1021px) {
+    .header-container {
+        width: 100%;
+        position: relative;
+    }
+
+    .menu {
+        display: flex;
+        width: 70px;
+
+    }
+
+    .menu img {
+        filter: opacity(.8);
+        width: 80%;
+        height: auto;
+    }
+
+    .nav-buttons {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        top: 100px;
+        left: 0;
+        padding: 25px 15px;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .header-buttons {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-buttons.active {
+        display: flex;
+    }
+
+    .signup {
+        background-color: #303030;
+        padding: 5px 15px;
+        color: white;
+        border-radius: 30px;
+    }
+}

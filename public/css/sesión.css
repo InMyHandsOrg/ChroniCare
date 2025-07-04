@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #5cb5ff;
+    --secondary-color: #0070da;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.portada-container,
+.forms-container {
+    width: 100%;
+    height: 100%;
+}
+.portada-container{
+     display: flex;
+    justify-content: center;
+}
+.portada-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    gap: 20px;
+}
+.portada-datos h2{
+    font-size: 2.5rem;
+    color:var(--secondary-color);
+    line-height: 2.8rem;
+}
+.portada-datos p{
+    color:rgb(85, 85, 85);
+    font-size: 1.2rem;
+     line-height: 2rem;
+}
+.portada-datos img{
+    width: 100%;
+    margin: 0 auto;
+}
+.forms-container {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), rgb(41, 184, 255));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms-container img {
+    width: 190px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    margin: auto auto auto 0;
+}
+
+.image-container {
+    width: 70%;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    
+    width: 70%;
+    max-width: 400px;
+
+}
+
+.buttons {
+    display: flex;
+    margin-bottom: 3rem;
+   gap: 10px;
+}
+
+.buttons a {
+    padding: 0.3rem;
+    cursor: pointer;
+    border: none;
+    color: rgb(152, 152, 152);
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgb(152, 152, 152);;
+}
+
+.buttons a.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+}
+
+.form.active {
+    display: flex;
+}
+
+.form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form input {
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form button[type="submit"] {
+    background-color: #ffffff;
+    border: none;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    max-width: 150px;
+    margin-top: 30px;
+    font-size: 1rem;
+    
+}
+
+.form button[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color:white;
+}
+
+@media (max-width: 750px) {
+    .portada-container{
+        display: none;
+    }
+}

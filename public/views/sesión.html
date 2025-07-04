@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Registro</title>
+    <link rel="stylesheet" href="./../css/sesión.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="portada-container">
+            <div class="portada-datos">
+                <h2>Porque su salud y tu tranquilidad merecen lo mejor, confía en ChroniCare</h2>
+                <p>Te ayudamos a cuidar de tus seres queridos con una plataforma diseñada para acompañar, organizar y monitorear su bienestar día a día.</p>
+                <img src="./../images/salud-vector.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="forms-container">
+            <a class="image-container" href="./../../index.html">
+                <img src="./../images/ChroniCare-logo.png" alt="">
+            </a>
+
+            <div class="form-container">
+
+                <div class="buttons">
+                    <a id="btn-login">Iniciar sesión</a>
+                    <a id="btn-register">Registrarse</a>
+                </div>
+
+                <!-- Formulario de inicio de sesión -->
+                <form id="login-form" class="form active">
+                    <input type="email" placeholder="Correo electrónico" required />
+                    <input type="password" placeholder="Contraseña" required />
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <!-- Formulario de registro -->
+                <form id="register-form" class="form">
+                    <input type="text" placeholder="Nombre completo" required />
+                    <input type="email" placeholder="Correo electrónico" required />
+                    <input type="password" placeholder="Contraseña" required />
+                    <button type="submit">Crear cuenta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../javascript/sesión.js"></script>
+</body>
+
+</html>

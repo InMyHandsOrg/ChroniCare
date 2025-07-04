@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChroniCare</title>
+    <link rel="stylesheet" href="./public/css/loader.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/footer.css">
+    <link rel="stylesheet" href="./public/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="spinner">
+            <img src="./public/images/ChroniCare-logo.png" alt="">
+        </div>
+    </div>
+    <header class="container" style="display: none;">
+        <div class="header-container">
+            <a class="logo-link" href="./index.html"><img src="./public/images/ChroniCare-logo.png" alt="Logo ChroniCare"></a>
+            <div class="nav-buttons">
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Guía de salud</a></li>
+                        <li><a href="">Nuestro Equipo</a></li>
+                        <li><a href="">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="header-buttons">
+                    <a class="signup" href="./public/views/sesión.html?view=register">Registrarse</a>
+                    <a class="login" href="./public/views/sesión.html?view=login">Iniciar sesión</a>
+                </div>
+            </div>
+
+            <div class="menu" id="menu-toggle"><img src="./public/images/menu.png" alt=""></div>
+        </div>
+    </header>
+    <main class="container" style="display: none;">
+        <section class="section-1">
+            <div class="section-1-container">
+                <div class="portada">
+                    <div class="portada-container">
+                        <p>Tu salud, organizada y a tu alcance</p>
+                        <h1>ChroniCare: Tu salud bajo control, todos los días</h1>
+                        <p>Recibe recordatorios, registra tus síntomas, accede a recomendaciones claras y siente el
+                            apoyo de
+                            una comunidad que entiende lo que vives.</p>
+                        <div class="botones-descarga">
+                            <a href="">Download for Android</a>
+                            <a href="">Download for iOS</a>
+                        </div>
+
+                    </div>
+                    <img src="./public/images/autoridad-2.png" alt="Imagen de portada">
+                </div>
+                <div class="datos">
+                    <div>
+                        <h4 data-target="100">0</h4>
+                        <span>Hospitales afiliados</span>
+                    </div>
+                    <div>
+                        <h4 data-target="1200">0</h4>
+                        <span>Usuarios</span>
+                    </div>
+                    <div>
+                        <h4 data-target="200">0</h4>
+                        <span>Doctores y enfermeros</span>
+                    </div>
+                    <div>
+                        <h4 data-target="15">0</h4>
+                        <span>Especialidades</span>
+                    </div>
+                </div>
+                <div class="container-usuarios">
+                    <div class="usuario usuario-1">
+                        <img src="./public/images/person-1.jpg" alt="">
+                        <div>
+                            <h4>Carlos Bustamante</h4>
+                            <p>¡Mejor control de mi salud!</p>
+                        </div>
+                    </div>
+                    <div class="usuario usuario-2">
+                        <img src="./public/images/person-2.jpg" alt="">
+                        <div>
+                            <h4>Rafael Collins</h4>
+                            <p>Todo mi seguimiento de salud, ahora en <br> un solo lugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <section class="section-2">
+            <h2>Nuestras funcionalidades <br> principales</h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Recordatorios">
+                        <h4>Recordatorios diarios</h4>
+                        <p>Recibe notificaciones puntuales para tomar tus medicamentos según tu tratamiento, sin
+                            preocuparte por olvidos.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Citas médicas">
+                        <h4>Gestión de citas</h4>
+                        <p>Organiza tus próximas consultas médicas y recibe avisos anticipados para que no pierdas
+                            ninguna visita importante.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Síntomas">
+                        <h4>Seguimiento de síntomas</h4>
+                        <p>Registra cómo te sientes cada día y observa patrones o cambios que te ayudarán a entender
+                            mejor tu estado de salud.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Signos vitales">
+                        <h4>Registro de signos vitales</h4>
+                        <p>Guarda tus valores de presión arterial, glucosa, frecuencia cardiaca y más para llevar un
+                            control detallado y constante.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Recomendaciones">
+                        <h4>Consejos personalizados</h4>
+                        <p>Consulta recomendaciones adaptadas a tu condición, incluyendo alimentación, actividad física
+                            y prevención de crisis.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Historial médico">
+                        <h4>Tu historia en un solo lugar</h4>
+                        <p>Accede fácilmente a tu historial clínico, diagnósticos, tratamientos y evolución sin depender
+                            de papeles ni archivos perdidos.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Diseño accesible">
+                        <h4>Diseño fácil de usar</h4>
+                        <p>Una interfaz clara, con texto legible, íconos grandes y navegación simple, pensada
+                            especialmente para facilitar tu experiencia.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/icon-fun.png" alt="Compartir evolución">
+                        <h4>Comparte tu evolución</h4>
+                        <p>Envía tus registros de salud a tu médico o familiar para que puedan seguir de cerca tu estado
+                            y ayudarte a mejorar.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="section-3-container">
+                <div class="section-3-container-img">
+                    <img src="./public/images/DOCTOR3D-3.png" alt="">
+                </div>
+                <div class="section-3-container-guia">
+                    <span>Guía de Salud para Adultos Mayores</span>
+                    <h3>Cuidar tu salud es fácil con pequeños hábitos diarios:</h3>
+                    <div class="section-3-guia-items">
+                        <div class="section-3-guia-item">
+                            <div class="section-3-guia-item-icon">
+                                <img src="./public/images/plus.png" alt="">
+                            </div>
+
+                            <div>
+                                <h4>Hidratación diaria</h4>
+                                <p>Toma al menos 6 a 8 vasos de agua al día.</p>
+                            </div>
+                        </div>
+                        <div class="section-3-guia-item">
+                            <div class="section-3-guia-item-icon">
+                                <img src="./public/images/plus.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Ejercicio suave</h4>
+                                <p>Camina 30 minutos o haz ejercicios de estiramiento.</p>
+                            </div>
+                        </div>
+                        <div class="section-3-guia-item">
+                            <div class="section-3-guia-item-icon">
+                                <img src="./public/images/plus.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Control de medicamentos</h4>
+                                <p>Lleva un control diario con ayuda de nuestra app.</p>
+                            </div>
+                        </div>
+                        <div class="section-3-guia-item">
+                            <div class="section-3-guia-item-icon">
+                                <img src="./public/images/plus.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Chequeos regulares</h4>
+                                <p>No olvides tus citas médicas, agenda y haz seguimiento.</p>
+                            </div>
+                        </div>
+                        <div class="section-3-guia-item">
+                            <div class="section-3-guia-item-icon">
+                                <img src="./public/images/plus.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Comunicación con tu familia</h4>
+                                <p>Mantente conectado para evitar el aislamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="section-4-container">
+                <h2>Nuestras autoridades</h2>
+                <p>Un equipo humano, cálido y altamente calificado para acompañarte en cada etapa del cuidado médico.
+                </p>
+                <div class="section-4-container-items">
+                    <div class="section-4-item">
+                        <div class="doctor-image"><img src="./public/images/DOCTOR3D-4.png" alt=""></div>
+                        <h4>Carlos Perez</h4>
+                        <h5>Geriatra</h5>
+                        <p>Especialista en el cuidado integral de adultos mayores, enfocado en la prevención,
+                            diagnóstico y tratamiento de enfermedades asociadas a la edad.</p>
+                        <a href="">Linkedin</a>
+                    </div>
+                    <div class="section-4-item">
+                        <div class="doctor-image"><img src="./public/images/autoridad-1.png" alt=""></div>
+                        <h4>Alcidez Carrion</h4>
+                        <h5>Psicólogo</h5>
+                        <p>Experto en terapias cognitivas para adultos mayores, centradas en calidad de vida.</p>
+                        <a href="">Linkedin</a>
+                    </div>
+                    <div class="section-4-item">
+                        <div class="doctor-image"><img src="./public/images/autoridad-2.png" alt=""></div>
+                        <h4>Andrés Navarro</h4>
+                        <h5>Cardiólogo</h5>
+                        <p>Especialista en salud cardiovascular del adulto mayor, enfocado en la prevención y
+                            tratamiento de enfermedades del corazón.</p>
+                        <a href="">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="section-5-container">
+                <h2>Contáctanos</h2>
+                <p>Completa el formulario y uno de nuestros especialistas se comunicará contigo a la brevedad.</p>
+                <div class="contacto-formulario">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <div class="input-group-1">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required
+                                    placeholder="Ingresa tu nombre aquí...">
+
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="Ingresa tu correo electrónico aquí...">
+
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono"
+                                    placeholder="Ingresa tu teléfono aquí...">
+                            </div>
+                            <div class="input-group-2">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required
+                                    placeholder="Ingresa tu mensaje aquí..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container" style="display: none;">
+        <div class="footer-logo">
+            <a href="./index.html"><img src="./public/images/ChroniCare-logo.png" alt=""></a>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="">Contáctanos</a></li>
+                <li><a href="">Nuestro equipo</a></li>
+                <li><a href="">Libro de reclamaciones</a></li>
+                <li><a href="">Política de privacidad</a></li>
+            </ul>
+
+
+        </div>
+        <p>&COPY; ChroniCare. Todos los derechos reservados.</p>
+        <div class="footer-social">
+            <a href=""><img src="./public/images/facebook.png" alt=""></a>
+            <a href=""><img src="./public/images/instagram.png" alt=""></a>
+            <a href=""><img src="./public/images/youtube.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="./public/javascript/swipper.js"></script>
+    <script src="./public/javascript/index.js"></script>
+</body>
+
+</html>
