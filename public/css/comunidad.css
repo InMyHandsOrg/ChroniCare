@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
-  font-family: 'Inter', sans-serif;
+  
   background-color: #f2f6fa;
   color: #2c3e50;
   margin: 0;
-  padding: 2rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;

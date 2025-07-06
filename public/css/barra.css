@@ -1,6 +1,13 @@
-
-aside {
-    position: fixed;
+*{
+    margin: 0;
+        margin: 0;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+#barra {
+   position: fixed;
     top: 50%;
     left: 1rem;
     /* left-4 en Tailwind */
@@ -17,7 +24,7 @@ aside {
     box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-aside ul {
+#barra ul {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -27,13 +34,13 @@ aside ul {
     list-style: none;
 }
 
-aside ul li:first-child {
+#barra ul li:first-child {
     padding: 0.75rem 1.25rem;
     /* py-3 px-5 */
 
 }
 
-aside ul li:first-child img {
+#barra ul li:first-child img {
     width: 2.25rem;
     /* w-9 */
     transition: all 0.5s ease;
@@ -42,7 +49,7 @@ aside ul li:first-child img {
 }
 
 
-.item {
+#barra .item {
     display: grid;
     grid-template-columns: 40px 0fr;
     /* cerrado por defecto */
@@ -57,31 +64,31 @@ aside ul li:first-child img {
     color: #171717;
 }
 
-.item:hover {
+#barra .item:hover {
     background-color: #171717;
     /* bg-neutral-900 */
 }
 
-.item img {
+#barra .item img {
     width: 1.25rem;
     /* w-5 */
     justify-self: center;
     transition: all 0.3s ease;
 }
 
-.item:hover img {
+#barra .item:hover img {
     filter: invert(100%);
 }
 
-.item div {
+#barra .item div {
     overflow: hidden;
 }
 
-.salida {
+#barra .salida {
     margin-top: 500px;
 }
 
-.item p {
+#barra .item p {
     padding-left: 1rem;
     transition: all 0.3s ease;
     white-space: nowrap;
@@ -89,12 +96,12 @@ aside ul li:first-child img {
     overflow: hidden;
 }
 
-.item:hover p {
+#barra .item:hover p {
     color: white;
 }
 
 /* Si deseas que el menú se abra con JavaScript (como en React),
    deberás añadir la clase .abierto dinámicamente */
-.item.abierto {
+#barra .item.abierto {
     grid-template-columns: 40px 1fr;
 }
