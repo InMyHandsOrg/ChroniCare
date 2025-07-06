@@ -1,0 +1,121 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content {
+    margin: 3rem 20rem;
+}
+
+.search-container {
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.search-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  width: 100%;
+}
+.search-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0e161b;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  line-height: 1.2;
+}
+.search-bar-wrapper {
+  padding: 0 1rem 1rem 1rem;
+}
+.search-label {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+  height: 3rem;
+  width: 100%;
+}
+.search-input-group {
+  display: flex;
+  align-items: stretch;
+  border-radius: 12px;
+  height: 100%;
+  background-color: #e7eef3;
+}
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  color: #4e7a97;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.search-input {
+  flex: 1;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: #0e161b;
+  background-color: #e7eef3;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.search-input::placeholder {
+  color: #4e7a97;
+}
+.search-helper {
+  font-size: 14px;
+  color: #4e7a97;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+  .med-list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    min-height: 72px;
+    cursor: pointer;
+    border-radius: 1rem;
+
+    &:hover {
+        background: #dddddd;
+    }
+  }
+
+  .med-image {
+    background-color: #eaeef1;
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .med-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .med-title {
+    color: #0e161b;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .med-description {
+    color: #4e7a97;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+  }

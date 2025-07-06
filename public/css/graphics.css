@@ -126,7 +126,7 @@
     border-radius: 1rem;
     width: 25rem;
     height: 15rem;
-    background-image: url("/public/images/noDataImage.png");
+    background-image: url("./../images/noDataImage.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

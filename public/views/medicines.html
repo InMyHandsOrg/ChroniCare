@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines</title>
+    <link rel="stylesheet" href="./../css/medicines.css">
+    <link rel="stylesheet" href="./../css/barra.css">
+    <script src="./../javascript/medicines.js" defer></script>
+    <script src="./../javascript/barra.js" defer></script>
+</head>
+<body>
+    <aside>
+        <ul>
+          <li>
+            <img src="./../images/menu.png" />
+          </li>
+          <li>
+            <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+              <div>
+                <p>Inicio</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a href="./graphics.html" class="item"><img src="./../images/icons/cardio.png" />
+              <div>
+                <p>Signos vitales</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+              <div>
+                <p>Monitoreo</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+              <div>
+                <p>Rutinas saludables</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href="./medicines.html"><img src="./../images/icons/medicamento.png" />
+              <div>
+                <p>Medicamentos</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href=""><img src="./../images/icons/cita.png" />
+              <div>
+                <p>Citas</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href=""><img src="./../images/icons/agenda.png" />
+              <div>
+                <p>Contacto</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href=""><img src="./../images/icons/config.png" />
+              <div>
+                <p>Configuración</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href="./sesión.html">
+              <img src="./../images/icons/salida.png" />
+              <div>
+                <p>Cerrar Sesión</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <div class="search-container">
+          <div class="search-content">
+            <h2 class="search-title">Encuentra tus medicamentos</h2>
+            <div class="search-bar-wrapper">
+              <label class="search-label">
+                <div class="search-input-group">
+                  <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                    </svg>
+                  </div>
+                  <input id="searchInput" class="search-input" type="text" placeholder="Busca por nombre del medicamento o principio activo"/>
+                </div>
+              </label>
+            </div>
+            <p class="search-helper">Ejemplo: Paracetamol, Ibuprofeno, Amoxicilina</p>
+          </div>
+        </div>
+        <div id="noResultsMessage" style="display: none; flex-direction: column;">
+            <a style="display: flex;justify-content: center; margin-bottom: 0.5rem; font-size: 1.5rem; font-weight: 700;">
+                Este medicamento no está disponible en la base de datos actual
+            </a>
+            <p style="display: flex;justify-content: center;">
+                Por favor, verifica el nombre del medicamento o intenta buscar un medicamento similar.
+            </p>
+        </div>        
+        <div class="med-list-item">
+          <div class="med-image">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+          </div>
+          <div class="med-info">
+            <p class="med-title">Paracetamol</p>
+            <p class="med-description">Disponible en 3 farmacias cercanas</p>
+          </div>
+        </div>
+
+        <div class="med-list-item">
+          <div class="med-image">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+          </div>
+          <div class="med-info">
+            <p class="med-title">Ibuprofeno</p>
+            <p class="med-description">Disponible en 5 farmacias cercanas</p>
+          </div>
+        </div>
+
+        <div class="med-list-item">
+          <div class="med-image">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+          </div>
+          <div class="med-info">
+            <p class="med-title">Amoxicilina</p>
+            <p class="med-description">Disponible en 2 farmacias cercanas</p>
+          </div>
+        </div>
+
+        <div class="med-list-item">
+          <div class="med-image">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+          </div>
+          <div class="med-info">
+            <p class="med-title">Loratadina</p>
+            <p class="med-description">Disponible en 4 farmacias cercanas</p>
+          </div>
+        </div>
+
+        <div class="med-list-item">
+          <div class="med-image">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+          </div>
+          <div class="med-info">
+            <p class="med-title">Omeprazol</p>
+            <p class="med-description">Disponible en 1 farmacia cercana</p>
+          </div>
+        </div>
+
+        <div class="med-list-item">
+          <div class="med-image">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+          </div>
+          <div class="med-info">
+            <p class="med-title">Azitromicina</p>
+            <p class="med-description">Disponible en 6 farmacias cercanas</p>
+          </div>
+        </div>
+
+        <div class="med-list-item">
+            <div class="med-image">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+            </div>
+            <div class="med-info">
+                <p class="med-title">Ranitidina</p>
+                <p class="med-description">Disponible en 2 farmacias cercanas</p>
+            </div>
+        </div>
+
+        <div class="med-list-item">
+          <div class="med-image">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pill"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" /><path d="M8.5 8.5l7 7" /></svg>
+          </div>
+          <div class="med-info">
+            <p class="med-title">Cetirizina</p>
+            <p class="med-description">Disponible en 3 farmacias cercanas</p>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
