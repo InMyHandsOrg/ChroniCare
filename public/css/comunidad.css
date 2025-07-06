@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f2f6fa;
+  color: #2c3e50;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a73e8;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+select {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1664c1;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: #333;
+}
+
+ul#mensajes {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+ul#mensajes li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ul#mensajes {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+}
+
+ul#mensajes li {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul.respuestas {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+ul.respuestas li {
+  background-color: #eef5ff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ChroniCare - Subir Contenido Validado</title>
+  <link rel="icon" href="./../images/logoicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./../css/contenido.css" />
+  <link rel="stylesheet" href="./../css/barra.css">
+</head>
+
+<body>
+  <aside>
+    <ul>
+      <li>
+        <img src="./../images/menu.png" />
+      </li>
+      <li>
+        <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+          <div>
+            <p>Inicio</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a id="openVitalesBtn" class="item"><img src="./../images/icons/cardio.png" />
+          <div>
+            <p>Signos vitales</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+          <div>
+            <p>Monitoreo</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+          <div>
+            <p>Rutinas saludables</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/medicamento.png" />
+          <div>
+            <p>Medicamentos</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/cita.png" />
+          <div>
+            <p>Citas</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/agenda.png" />
+          <div>
+            <p>Contacto</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/config.png" />
+          <div>
+            <p>Configuración</p>
+          </div>
+        </a>
+
+      </li>
+      <li class="salida">
+        <a class="item" href="./sesión.html">
+          <img src="./../images/icons/salida.png" />
+          <div>
+            <p>Cerrar Sesión</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </aside>
+  <section id="contenido-validado">
+    <h1>Subir contenido educativo</h1>
+    <p>
+      Como profesional de la salud, puedes compartir artículos útiles para los
+      pacientes. Recuerda incluir siempre las fuentes de respaldo.
+    </p>
+
+    <form id="form-articulo">
+      <label for="titulo">Título del artículo:</label>
+      <input type="text" id="titulo" required />
+
+      <label for="contenido">Contenido:</label>
+      <textarea id="contenido" rows="6" required></textarea>
+
+      <label for="fuentes">Referencias / Fuentes citadas:</label>
+      <textarea id="fuentes" rows="3" required></textarea>
+
+      <label for="rol">Tu rol profesional:</label>
+      <select id="rol" required>
+        <option value="">Selecciona tu rol</option>
+        <option value="validado">Médico especialista certificado</option>
+        <option value="regular">Profesional de la salud</option>
+      </select>
+
+      <button type="submit">Publicar</button>
+    </form>
+
+    <div id="mensaje" class="hidden"></div>
+  </section>
+
+  <script src="./../javascript/contenido.js"></script>
+  <script src="./../javascript/barra.js"></script>
+</body>
+
+</html>

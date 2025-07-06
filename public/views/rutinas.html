@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChroniCare – Rutinas Saludables</title>
+  <link rel="icon" href="./../images/logoicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./../css/rutinas.css" />
+</head>
+
+<body>
+  <aside>
+    <ul>
+      <li>
+        <img src="./../images/menu.png" />
+      </li>
+      <li>
+        <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+          <div>
+            <p>Inicio</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a id="openVitalesBtn" class="item"><img src="./../images/icons/cardio.png" />
+          <div>
+            <p>Signos vitales</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+          <div>
+            <p>Monitoreo</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+          <div>
+            <p>Rutinas saludables</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/medicamento.png" />
+          <div>
+            <p>Medicamentos</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/cita.png" />
+          <div>
+            <p>Citas</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/agenda.png" />
+          <div>
+            <p>Contacto</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/config.png" />
+          <div>
+            <p>Configuración</p>
+          </div>
+        </a>
+
+      </li>
+      <li class="salida">
+        <a class="item" href="./sesión.html">
+          <img src="./../images/icons/salida.png" />
+          <div>
+            <p>Cerrar Sesión</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </aside>
+  <h1>Rutinas Saludables</h1>
+
+  <section id="cuestionario">
+    <h2>Completa tu perfil de salud</h2>
+    <form id="form-cuestionario">
+      <label>Peso actual (kg):
+        <input type="text" id="peso" required />
+      </label>
+
+      <label>Edad:
+        <input type="text" id="edad" required />
+      </label>
+
+      <label>Nivel de actividad física:
+        <select id="actividad" required>
+          <option value="">Selecciona...</option>
+          <option value="bajo">Bajo</option>
+          <option value="moderado">Moderado</option>
+          <option value="alto">Alto</option>
+        </select>
+      </label>
+
+      <label>¿Tienes alguna restricción alimentaria?
+        <input type="text" id="restricciones" placeholder="(opcional)" />
+      </label>
+
+      <button type="submit">Guardar perfil de salud</button>
+    </form>
+  </section>
+
+  <section id="seleccion-rutina">
+    <h2>Generar rutina personalizada</h2>
+    <button onclick="generarRutina('ejercicio')">Rutina de Ejercicio</button>
+    <button onclick="generarRutina('alimentacion')">
+      Plan de Alimentación
+    </button>
+  </section>
+
+  <section id="resultado" class="hidden">
+    <h2>Tu rutina personalizada</h2>
+    <div id="contenido-rutina"></div>
+  </section>
+
+  <section id="error" class="hidden">
+    <p class="error-msg">
+      Completa primero tu perfil de salud para generar rutinas personalizadas.
+    </p>
+  </section>
+
+  <script src="./../javascript/main.js"></script>
+</body>
+
+</html>

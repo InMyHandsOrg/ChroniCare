@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>¿Cómo te sientes?</title>
+    <link rel="icon" href="./../images/logoicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/autoevaluacion.css">
+    <link rel="stylesheet" href="./../css/barra.css">
+</head>
+
+<body>
+    <aside>
+        <ul>
+            <li>
+                <img src="./../images/menu.png" />
+            </li>
+            <li>
+                <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+                    <div>
+                        <p>Inicio</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href="./perfil.html"><img src="./../images/icons/perfil.png" />
+                    <div>
+                        <p>Perfil</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="./autoevaluacion.html"><img src="./../images/icons/autoevaluacion.png" />
+                    <div>
+                        <p>Autoevaluación</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a id="openVitalesBtn" class="item"><img src="./../images/icons/cardio.png" />
+                    <div>
+                        <p>Signos vitales</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+                    <div>
+                        <p>Monitoreo</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./contenido.html" class="item"><img src="./../images/icons/educativo.png" />
+                    <div>
+                        <p>Contenido educativo</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+                    <div>
+                        <p>Rutinas saludables</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a href="./comunidad.html" class="item"><img src="./../images/icons/alimenticio.png" />
+                    <div>
+                        <p>Comunidad</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/medicamento.png" />
+                    <div>
+                        <p>Medicamentos</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/cita.png" />
+                    <div>
+                        <p>Citas</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/agenda.png" />
+                    <div>
+                        <p>Contacto</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href="./premium.html"><img src="./../images/icons/config.png" />
+                    <div>
+                        <p>Suscripción</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="./moderacion.html"><img src="./../images/icons/moderador.png" />
+                    <div>
+                        <p>Moderador</p>
+                    </div>
+                </a>
+            </li>
+            <li class="salida">
+                <a class="item" href="./sesión.html">
+                    <img src="./../images/icons/salida.png" />
+                    <div>
+                        <p>Cerrar Sesión</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="container">
+        <h2>Autoevaluación Rápida</h2>
+        <button id="btnSentir">¿Cómo te sientes?</button>
+
+        <div id="estadoContainer" class="hidden">
+            <label for="estado">Selecciona tu estado emocional actual:</label>
+            <select id="estado">
+                <option value="">-- Elige una opción --</option>
+                <option value="feliz">😊 Feliz</option>
+                <option value="ansioso">😰 Ansioso/a</option>
+                <option value="triste">😢 Triste</option>
+                <option value="estresado">😓 Estresado/a</option>
+                <option value="enojado">😠 Enojado/a</option>
+                <option value="cansado">😴 Cansado/a</option>
+            </select>
+            <button id="evaluarBtn">Evaluar</button>
+        </div>
+
+        <div id="resultado" class="mensaje"></div>
+    </div>
+
+    <script src="./../javascript/autoevaluacion.js"></script>
+    <script src="./../javascript/barra.js"></script>
+</body>
+
+</html>

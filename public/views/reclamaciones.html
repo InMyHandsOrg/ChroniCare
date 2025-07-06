@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/dg.css">
+</head>
+<body>
+    <section class="feature-section">
+    <h2>Libro de Reclamaciones</h2>
+    <p>¿Tienes alguna queja? Exprésala fácilmente en nuestro formulario digital.</p>
+      <button onclick="document.getElementById('formLibro').style.display='block'">Acceder al libro</button>
+
+      <div id="formLibro" style="display:none; padding:1rem; border:1px solid #ccc; margin-top:1rem;">
+          <h3>Libro de Reclamaciones</h3>
+          <label>Nombre completo:</label><br>
+          <input type="text" name="nombre"><br><br>
+
+          <label>Correo electrónico:</label><br>
+          <input type="email" name="correo"><br><br>
+
+          <label>Reclamo:</label><br>
+          <textarea name="reclamo" rows="4"></textarea><br><br>
+
+          <button onclick="enviarReclamo()">Enviar</button>
+      </div>
+
+  </section>
+  <script src="./../javascript/dg.js"></script>
+</body>
+</html>

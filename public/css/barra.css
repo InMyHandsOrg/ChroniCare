@@ -1,0 +1,100 @@
+
+aside {
+    position: fixed;
+    top: 50%;
+    left: 1rem;
+    /* left-4 en Tailwind */
+    transform: translateY(-50%);
+    height: 90vh;
+    background: linear-gradient(45deg, #ffffffe3, #ffffff);
+    /* bg-neutral-950 + bg-opacity-40 */
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 1.5rem;
+    /* rounded-3xl */
+    padding: 1.5rem 0.5rem;
+    /* py-6 px-2 */
+    width: max-content;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-height: 600px;
+    gap: 0.5rem;
+    color: #171717;
+    list-style: none;
+}
+
+aside ul li:first-child {
+    padding: 0.75rem 1.25rem;
+    /* py-3 px-5 */
+
+}
+
+aside ul li:first-child img {
+    width: 2.25rem;
+    /* w-9 */
+    transition: all 0.5s ease;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+
+.item {
+    display: grid;
+    grid-template-columns: 40px 0fr;
+    /* cerrado por defecto */
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    /* py-3 px-5 */
+    border-radius: 1rem;
+    /* rounded-2xl */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #171717;
+}
+
+.item:hover {
+    background-color: #171717;
+    /* bg-neutral-900 */
+}
+
+.item img {
+    width: 1.25rem;
+    /* w-5 */
+    justify-self: center;
+    transition: all 0.3s ease;
+}
+
+.item:hover img {
+    filter: invert(100%);
+}
+
+.item div {
+    overflow: hidden;
+}
+
+.salida {
+    margin-top: 500px;
+}
+
+.item p {
+    padding-left: 1rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    /* evita que el texto se divida en líneas */
+    overflow: hidden;
+}
+
+.item:hover p {
+    color: white;
+}
+
+/* Si deseas que el menú se abra con JavaScript (como en React),
+   deberás añadir la clase .abierto dinámicamente */
+.item.abierto {
+    grid-template-columns: 40px 1fr;
+}

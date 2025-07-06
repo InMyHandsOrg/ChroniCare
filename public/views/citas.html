@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../images/logoicon.ico" type="image/x-icon">
+    <title>ChroniCare | Citas</title>
+    <link rel="stylesheet" href="./../css/dg.css">
+    <link rel="stylesheet" href="./../css/barra.css">
+</head>
+
+<body>
+    <aside >
+        <ul>
+            <li>
+                <img src="./../images/menu.png" />
+            </li>
+            <li>
+                <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+                    <div>
+                        <p>Inicio</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href="./perfil.html"><img src="./../images/icons/perfil.png" />
+                    <div>
+                        <p>Perfil</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="./autoevaluacion.html"><img src="./../images/icons/autoevaluacion.png" />
+                    <div>
+                        <p>Autoevaluación</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="./dieta.html"><img src="./../images/icons/dieta.png" />
+                    <div>
+                        <p>Crear dieta</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a id="openVitalesBtn" class="item"><img src="./../images/icons/cardio.png" />
+                    <div>
+                        <p>Signos vitales</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+                    <div>
+                        <p>Monitoreo</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./contenido.html" class="item"><img src="./../images/icons/educativo.png" />
+                    <div>
+                        <p>Contenido educativo</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+                    <div>
+                        <p>Rutinas saludables</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a href="./comunidad.html" class="item"><img src="./../images/icons/alimenticio.png" />
+                    <div>
+                        <p>Comunidad</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href="./citas.html"><img src="./../images/icons/cita.png" />
+                    <div>
+                        <p>Citas</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/agenda.png" />
+                    <div>
+                        <p>Contacto</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href="./premium.html"><img src="./../images/icons/config.png" />
+                    <div>
+                        <p>Suscripción</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="./moderacion.html"><img src="./../images/icons/moderador.png" />
+                    <div>
+                        <p>Moderador</p>
+                    </div>
+                </a>
+            </li>
+            <li class="salida">
+                <a class="item" href="./sesión.html">
+                    <img src="./../images/icons/salida.png" />
+                    <div>
+                        <p>Cerrar Sesión</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </aside>
+    <section style="max-width: 1400px; margin: auto;" class="feature-section">
+        <h2>Recordatorios de citas</h2>
+        <p>Organiza tus consultas médicas con nuestro calendario inteligente.</p>
+        <button onclick="document.getElementById('modalCalendario').style.display='block'">Ver calendario</button>
+        <div id="modalCalendario" style="display:none;">
+            <iframe src="https://calendar.google.com/calendar/embed?src=diegozm11%40gmail.com&ctz=America%2FLima"
+                style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+    </section>
+<script src="./../javascript/dg.js"></script>
+<script src="./../javascript/barra.js"></script>
+</body>
+
+</html>

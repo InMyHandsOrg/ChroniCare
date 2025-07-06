@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChroniCare – Monitoreo de Signos Vitales</title>
+    <link rel="icon" href="./../images/logoicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/barra.css" />
+    <link rel="stylesheet" href="./../css/monitoreo.css">
+</head>
+
+<body>
+    <aside>
+        <ul>
+            <li>
+                <img src="./../images/menu.png" />
+            </li>
+            <li>
+                <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+                    <div>
+                        <p>Inicio</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a id="openVitalesBtn" class="item"><img src="./../images/icons/cardio.png" />
+                    <div>
+                        <p>Signos vitales</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+                    <div>
+                        <p>Monitoreo</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+                    <div>
+                        <p>Rutinas saludables</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/medicamento.png" />
+                    <div>
+                        <p>Medicamentos</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/cita.png" />
+                    <div>
+                        <p>Citas</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/agenda.png" />
+                    <div>
+                        <p>Contacto</p>
+                    </div>
+                </a>
+
+            </li>
+            <li>
+                <a class="item" href=""><img src="./../images/icons/config.png" />
+                    <div>
+                        <p>Configuración</p>
+                    </div>
+                </a>
+
+            </li>
+            <li class="salida">
+                <a class="item" href="./sesión.html">
+                    <img src="./../images/icons/salida.png" />
+                    <div>
+                        <p>Cerrar Sesión</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </aside>
+    <h1>Monitoreo de Signos Vitales</h1>
+
+    <p id="mensaje-vacio">
+        No se ha registrado ningún signo vital aún o no se ha conectado ningún
+        dispositivo wearable.
+    </p>
+
+    <div id="signos-container" class="hidden">
+        <p>
+            <strong>Presión arterial:</strong> <span id="presion">---</span> mmHg
+        </p>
+        <p>
+            <strong>Frecuencia cardíaca:</strong>
+            <span id="frecuencia">---</span> bpm
+        </p>
+    </div>
+
+    <div id="alerta" class="hidden"></div>
+
+    <hr />
+
+    <h2>Simulación manual</h2>
+
+    <form id="formulario-signos">
+        <label for="inputPresion">Presión arterial (mmHg):</label><br />
+        <input type="text" id="inputPresion" required /><br /><br />
+
+        <label for="inputFrecuencia">Frecuencia cardíaca (bpm):</label><br />
+        <input type="text" id="inputFrecuencia" required /><br /><br />
+
+        <button type="submit">Enviar valores</button>
+    </form>
+    <script src="./../javascript/barra.js"></script>
+</body>
+
+</html>

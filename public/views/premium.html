@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Suscripción Premium</title>
+  <link rel="icon" href="./../images/logoicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./../css/premium.css">
+  <link rel="stylesheet" href="./../css/barra.css">
+</head>
+
+<body>
+  <aside>
+    <ul>
+      <li>
+        <img src="./../images/menu.png" />
+      </li>
+      <li>
+        <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+          <div>
+            <p>Inicio</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a id="openVitalesBtn" class="item"><img src="./../images/icons/cardio.png" />
+          <div>
+            <p>Signos vitales</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+          <div>
+            <p>Monitoreo</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./contenido.html" class="item"><img src="./../images/icons/educativo.png" />
+          <div>
+            <p>Contenido educativo</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+          <div>
+            <p>Rutinas saludables</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/medicamento.png" />
+          <div>
+            <p>Medicamentos</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/cita.png" />
+          <div>
+            <p>Citas</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href=""><img src="./../images/icons/agenda.png" />
+          <div>
+            <p>Contacto</p>
+          </div>
+        </a>
+
+      </li>
+      <li>
+        <a class="item" href="./premium.html"><img src="./../images/icons/config.png" />
+          <div>
+            <p>Suscripción</p>
+          </div>
+        </a>
+      </li>
+      <li class="salida">
+        <a class="item" href="./sesión.html">
+          <img src="./../images/icons/salida.png" />
+          <div>
+            <p>Cerrar Sesión</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </aside>
+  <h2>Suscríbete a un Plan Premium</h2>
+
+  <form id="formPago">
+    <label for="plan">Selecciona un plan:</label>
+    <select id="plan" required>
+      <option value="">-- Elige un plan --</option>
+      <option value="mensual">Mensual - $9.99</option>
+      <option value="anual">Anual - $99.99</option>
+    </select>
+
+    <label for="nombre">Nombre en la tarjeta:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="numero">Número de tarjeta:</label>
+    <input type="text" id="numero" required maxlength="16" pattern="\d{16}" placeholder="16 dígitos">
+
+    <label for="fecha">Fecha de vencimiento:</label>
+    <input type="month" id="fecha" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" required maxlength="3" pattern="\d{3}">
+
+    <button type="submit">Pagar</button>
+    <p id="mensaje"></p>
+  </form>
+
+  <script src="./../javascript/premium.js"></script>
+  <script src="./../javascript/barra.js"></script>
+</body>
+
+</html>
