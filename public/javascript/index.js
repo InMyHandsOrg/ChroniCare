@@ -1,7 +1,7 @@
 function animateCounter(element, duration = 2000) {
   const target = +element.getAttribute('data-target');
   let start = 0;
-  const frameRate = 60; 
+  const frameRate = 60;
   const totalFrames = Math.round((duration / 1000) * frameRate);
   const increment = target / totalFrames;
 
@@ -24,7 +24,7 @@ const counters = document.querySelectorAll('.datos h4');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      animateCounter(entry.target, 3000); 
+      animateCounter(entry.target, 3000);
       observer.unobserve(entry.target);
     }
   });
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       usuario1.classList.add('move');
       usuario2.classList.add('move');
-    }, 2520); 
+    }, 2520);
   } else {
     console.log('No se encontraron los elementos .usuario-1 o .usuario-2');
   }
@@ -59,8 +59,17 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.querySelector(".nav-buttons");
+const navLinks = document.querySelector(".nav-buttons");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+setTimeout(function () {
+  document.getElementById("loader").style.display = "none";
+
+  document.querySelectorAll(".container").forEach(function (el) {
+    el.style.visibility = "visible";
+    el.style.opacity = "1";
   });
+}, 2500);
