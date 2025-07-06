@@ -47,3 +47,77 @@ document.getElementById("evaluarBtn").addEventListener("click", () => {
       resultado.textContent = "";
   }
 });
+
+const firstTestCard = document.querySelectorAll(".test-card")[0];
+const modal = document.getElementById("test-modal");
+const closeModal = document.getElementById("close-modal");
+const bfrTestSection = document.getElementById("bfrTestSection")
+const testSection = document.getElementById("testSection")
+const startTest = document.getElementById("startTest")
+const submitTest = document.getElementById("submit-test")
+const aftTestSection = document.getElementById("aftTestSection")
+const adherenceText = document.getElementById("adherence-text");
+const adherenceBar = document.getElementById("adherence-bar");
+const adherenceMessage = document.getElementById("adherence-message");
+
+let answered = 0
+let score = 0
+
+
+firstTestCard.addEventListener("click", () => {
+    modal.style.display='block'
+});
+
+closeModal.addEventListener("click", () => {
+    modal.style.display='none'
+    bfrTestSection.style.display = 'block'
+    testSection.style.display = 'none'
+    aftTestSection.style.display = 'none'
+});
+
+startTest.addEventListener("click", () => {
+    bfrTestSection.style.display = 'none'
+    testSection.style.display = 'block'
+})
+
+submitTest.addEventListener("click", () => {
+    const totalQuestions = 5;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+        if (document.querySelector(`input[name='q${i}']:checked`)) {
+            const selected = document.querySelector(`input[name='q${i}']:checked`)
+            answered++;
+            const value = selected.nextSibling.textContent.trim();
+
+            switch (value) {
+                case "Nunca": score += 4; break;
+                case "Raramente": score += 3; break;
+                case "A veces": score += 2; break;
+                case "Frecuentemente": score += 1; break;
+                case "Siempre": score += 0; break;
+            }
+        }
+    }
+
+    if (answered === totalQuestions) {
+        testSection.style.display = 'none'
+        aftTestSection.style.display = 'block'
+        closeModal.style.display = 'none'
+        answered = 0
+
+        const maxScore = totalQuestions * 4;
+        const percentage = Math.round((score / maxScore) * 100);
+        adherenceText.textContent = `Adherencia al tratamiento: ${percentage}%`;
+        adherenceBar.style.width = `${percentage}%`;
+
+        if (percentage >= 80) {
+            adherenceMessage.textContent = "Tu nivel de adherencia al tratamiento es alto. Sigue así para mantener tu salud y bienestar.";
+        } else if (percentage >= 50) {
+            adherenceMessage.textContent = "Tu adherencia al tratamiento es moderada. Considera hablar con tu médico sobre cómo mejorarla.";
+        } else {
+            adherenceMessage.textContent = "Tu adherencia al tratamiento es baja. Es importante que sigas las indicaciones médicas para mejorar tu salud.";
+        }
+    } else {
+        alert("Debes responder todas las preguntas para obtener un resultado")
+    }
+});

@@ -83,3 +83,81 @@ function enviarAlianza() {
   alert("Solicitud enviada. Nos pondremos en contacto contigo.");
   // Aquí podrías usar fetch() para enviar los datos.
 }
+
+    const modal = document.getElementById('editModal');
+    const closeBtn = document.getElementById('closeEditModal');
+    const form = document.getElementById('editForm');
+    const titleInput = document.getElementById('recordTitleInput');
+    const dateInput = document.getElementById('recordDateInput');
+
+    const meses = [
+    'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+    'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+    ];
+
+    let currentCard = null;
+  
+    function parseDate(dateStr) {
+        const months = {
+            enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5,
+            julio: 6, agosto: 7, septiembre: 8, octubre: 9, noviembre: 10, diciembre: 11
+        };
+
+        const match = dateStr.toLowerCase().match(/(\d{1,2}) de (\w+), (\d{4})/);
+        if (!match) return null;
+
+        const day = parseInt(match[1], 10);
+        const monthName = match[2];
+        const year = parseInt(match[3], 10);
+
+        const month = months[monthName];
+        if (month === undefined) return null;
+
+        return new Date(year, month, day);
+    }
+
+    document.querySelectorAll('.record-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const isLocked = card.dataset.blocked === "true";
+            if (isLocked) {
+                alert("Este registro no puede ser modificado sin autorización profesional");
+                return;
+            }
+
+            currentCard = card;
+            const title = card.querySelector('.record-title').textContent;
+            const dateText = card.querySelector('.record-date').textContent;
+
+            const parsedDate = parseDate(dateText);
+
+            titleInput.value = title;
+            dateInput.value = parsedDate.toISOString().split("T")[0];
+
+            modal.style.display = 'block';
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!currentCard) return;
+
+        const newTitle = titleInput.value;
+        const newDate = dateInput.value;
+
+        currentCard.querySelector('.record-title').textContent = newTitle;
+
+        const dateAux = new Date(newDate);
+        const formatted = dateAux.getUTCDate().toString() + " de " +  meses[dateAux.getUTCMonth()] + ", " + dateAux.getFullYear().toString()
+
+        currentCard.querySelector('.record-date').textContent = formatted;
+
+        modal.style.display = 'none';
+    });
+
+    function deleteSelectedRecord() {
+        currentCard.style.display = 'none';
+    }
