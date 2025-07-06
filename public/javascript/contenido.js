@@ -30,3 +30,30 @@ form.addEventListener("submit", function (e) {
 
   form.reset();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("searchInput");
+  const noResultsMessage = document.getElementById("noResultsMessage");
+  const articles = document.querySelectorAll(".article");
+  let matches = 0;
+
+  searchInput.addEventListener("input", () => {
+    const filter = searchInput.value.toLowerCase();
+    console.log(filter)
+
+    articles.forEach(article => {
+      const titleEl = article.querySelector(".title");
+
+      const title = titleEl ? titleEl.textContent.toLowerCase() : "";
+
+      const match = title.includes(filter);
+      article.style.display = match ? "flex" : "none";
+      
+      if(match) matches++;
+    });
+
+    noResultsMessage.classList.toggle("visible", matches == 0);
+    noResultsMessage.classList.toggle("hidden", matches > 0);
+    matches = 0;
+  });
+});

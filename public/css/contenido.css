@@ -1,3 +1,94 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #e7eef3;
+      border-radius: 8px;
+      padding: 4px 8px;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 6px;
+      font-size: 16px;
+      color: #0e161b;
+      flex: 1;
+    }
+
+    .main-content {
+      padding: 0rem 20rem;
+      padding-top: 3rem;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+    .article-container {
+      padding: 16px;
+    }
+
+    .article {
+      display: flex;
+      gap: 16px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      background-color: white;
+      align-items: stretch;
+    }
+
+    .article-text {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .article-text p.title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .article-text p.description {
+      font-size: 14px;
+      color: #4e7a97;
+      margin: 0;
+    }
+
+    .article-image {
+      flex: 1;
+      aspect-ratio: 16/9;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+    }
+
+  #noResultsMessage {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #4e7a97;
+    display: none;
+  }
+
+  #noResultsMessage.visible {
+    display: block;
+  }
+
+  #noResultsMessage.hidden {
+    display: none;
+  }
+
 #contenido-validado {
   max-width: 600px;
   margin: 0 auto;
@@ -6,6 +97,7 @@
   border-left: 6px solid #3cb371;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
 }
 
 #contenido-validado h1 {

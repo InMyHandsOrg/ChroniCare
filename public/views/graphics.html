@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <link rel="stylesheet" href="/public/css/graphics.css">
+    <link rel="stylesheet" href="/public/css/barra.css">
+    <script src="/public/javascript/graphics.js" defer></script>
+    <script src="/public/javascript/barra.js" defer></script>
+</head>
+<body>
+    <aside>
+        <ul>
+          <li>
+            <img src="./../images/menu.png" />
+          </li>
+          <li>
+            <a class="item" href="./dashboard.html"><img src="./../images/icons/casa.png" />
+              <div>
+                <p>Inicio</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a href="./graphics.html" class="item"><img src="./../images/icons/cardio.png" />
+              <div>
+                <p>Signos vitales</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./monitoreo.html" class="item"><img src="./../images/icons/chequeo.png" />
+              <div>
+                <p>Monitoreo</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./rutinas.html" class="item"><img src="./../images/icons/rutinas.png" />
+              <div>
+                <p>Rutinas saludables</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href=""><img src="./../images/icons/medicamento.png" />
+              <div>
+                <p>Medicamentos</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href=""><img src="./../images/icons/cita.png" />
+              <div>
+                <p>Citas</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href=""><img src="./../images/icons/agenda.png" />
+              <div>
+                <p>Contacto</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href=""><img src="./../images/icons/config.png" />
+              <div>
+                <p>Configuración</p>
+              </div>
+            </a>
+
+          </li>
+          <li>
+            <a class="item" href="./sesión.html">
+              <img src="./../images/icons/salida.png" />
+              <div>
+                <p>Cerrar Sesión</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <h1 style="margin-bottom: 2rem;">Progreso</h1>
+        <h3 style="margin-bottom: 1.75rem;">Tu resumen de salud durante esta semana</h3>
+        <div class="grid" id="healthBoxes">
+            <div class="box1">
+                <div>
+                    <div style="font-weight: 600; font-size: 1.5rem; margin-bottom: 0.5rem;">Presión arterial</div>
+                    <div style="font-weight: 700; font-size: 2.25rem;">120/80 mmHg</div>
+                </div>
+            </div>
+            <div class="box2">
+                <div>
+                    <div style="font-weight: 600; font-size: 1.5rem; margin-bottom: 0.5rem;">Oxigenación</div>
+                    <div style="font-weight: 700; font-size: 2.25rem;">97%</div>
+                </div>
+            </div>
+            <div class="box3">
+                <div>
+                    <div style="font-weight: 600; font-size: 1.5rem; margin-bottom: 0.5rem;">Ritmo cardíaco</div>
+                    <div style="font-weight: 700; font-size: 2.25rem;">85 bpm</div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <button id="openModalBtn" class="show-graphics-button">Ver gráficos</button>
+            <button class="delete-data-button">Borrar historial</button>
+        </div>
+    </main>
+    <div id="graphicsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h1 style="margin-bottom: 1rem;">Gráficos</h1>
+            <p style="margin-bottom: 1rem;">Aquí puedes ver los gráficos de tus signos vitales</p>
+            <div id="graphicsSection" style="display: block;">
+              <div>
+                <p style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem;">Peso corporal</p>
+                <p style="font-size: 2.25rem; font-weight: 700; margin-bottom: 0.5rem;">65 kg</p>
+                <div style="font-weight: 500; margin-bottom: 1rem;">
+                  <a style="color: #4e7a97;">Última semana</a>
+                  <a style="color: #ff0000">-2%</a>
+                </div>
+                <svg width="100%" height="148" viewBox="-3 0 478 150" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path
+                      d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z"
+                      fill="url(#paint0_linear_1131_5935)"
+                    ></path>
+                    <path
+                      d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25"
+                      stroke="#4e7a97"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    ></path>
+                    <defs>
+                      <linearGradient id="paint0_linear_1131_5935" x1="236" y1="1" x2="236" y2="149" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#e7eef3"></stop>
+                        <stop offset="1" stop-color="#e7eef3" stop-opacity="0"></stop>
+                      </linearGradient>
+                    </defs>
+                </svg>
+                <div style="display: flex; justify-content: space-between; font-weight: 500; padding-left: 1rem; padding-right: 1rem; color: #4e7a97; margin-top: 1rem;">
+                    <a>Lun</a>
+                    <a>Mar</a>
+                    <a>Mié</a>
+                    <a>Jue</a>
+                    <a>Vie</a>
+                    <a>Sáb</a>
+                    <a>Dom</a>
+                </div>
+              </div>
+            </div>
+            <div id="noDataMessage" style="display: none; margin-top: 2rem;">
+                <div style="display: flex; flex-direction: column;">
+                    <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 2rem;">
+                        <div class="noDataImage"></div>
+                    </div>
+                    <div class="noDataLbl1">
+                        Aún no hay suficientes datos
+                    </div>
+                    <div class="noDataLbl2">
+                        Sigue registrando tus datos para ver los gráficos
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
